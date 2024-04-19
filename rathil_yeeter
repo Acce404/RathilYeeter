@@ -1,0 +1,51 @@
+
+function OnEvent(event, arg)
+if (event == "MOUSE_BUTTON_RELEASED" and arg == 6) then
+
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+
+		end
+rathil_yeeter()
+	end
+end
+
+function rathil_yeeter()
+run(1250)
+PressKey("A")
+Sleep(670)
+ReleaseKey("A")
+Sleep(300)
+MoveMouseRelative(0,-50)
+Sleep(300)
+PressAndReleaseMouseButton(1)
+Sleep(200)
+MoveMouseRelative(70,80)
+Sleep(200)
+PressAndReleaseKey("spacebar")
+Sleep(200)
+PressAndReleaseKey("x")
+Sleep(9000)
+PressAndReleaseMouseButton(1)
+Sleep(50)
+MoveMouseRelative(115,0)
+PressKey("z")
+PressKey("w")
+Sleep(10)
+PressKey("lshift")
+Sleep(1500)
+ReleaseKey("w")
+ReleaseKey("lshift")
+ReleaseKey("z")
+end
+
+function run(t)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(t)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
