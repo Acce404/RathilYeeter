@@ -8,7 +8,8 @@ if (event == "MOUSE_BUTTON_RELEASED" and arg == 6) then
 			ReleaseKey("capslock")
 
 		end
-rathil_yeeter()
+--rathil_yeeter()
+rathil_yeeter2()
 	end
 end
 
@@ -38,6 +39,25 @@ PressKey("lshift")
 Sleep(1500)
 ReleaseKey("w")
 ReleaseKey("lshift")
+ReleaseKey("z")
+end
+
+function rathil_yeeter2()
+run(2500)
+PressAndReleaseKey("spacebar")
+Sleep(200)
+PressAndReleaseKey("x")
+Sleep(1000)
+PressKey("s")
+Sleep(2000)
+ReleaseKey("s")
+Sleep(200)
+MoveMouseRelative(-50,70)
+Sleep(5000)
+PressAndReleaseMouseButton(1)
+Sleep(50)
+PressKey("z")
+run(1500)
 ReleaseKey("z")
 end
 
