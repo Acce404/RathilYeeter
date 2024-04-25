@@ -1,0 +1,221 @@
+function OnEvent(event, arg)
+if (event == "MOUSE_BUTTON_RELEASED" and arg == 6) then
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+		end
+rathil_main()
+	end
+
+end
+
+function rathil_main()
+loadout(5)
+entermap_rathil(1)
+Sleep(60000)
+fly_rathil()
+entermap_rathil(0)
+Sleep(60000)
+rathil_yeeter3(1)
+end
+
+function fly_rathil()
+PressAndReleaseKey("3")
+PressKey("a")
+Sleep(1000)
+ReleaseKey("a")
+Sleep(200)
+PressKey("w")
+Sleep(1000)
+ReleaseKey("w")
+Sleep(200)
+for i=1,20,1 do
+	MoveMouseRelative(16,-12)
+	Sleep(10)
+end
+MoveMouseRelative(-10,0)
+Sleep(200)
+PressMouseButton(1)
+PressMouseButton(1)
+PressKey("escape")
+PressKey("q")
+ReleaseMouseButton(1)
+ReleaseKey("escape")
+Sleep(200)
+PressKey("escape")
+ReleaseKey("escape")
+ReleaseKey("q")
+Sleep(4500)
+for i=1,20,1 do
+	MoveMouseRelative(-29,20)
+	Sleep(10)
+end
+PressKey("w")
+PressAndReleaseKey("c")
+Sleep(1000)
+PressKey("spacebar")
+Sleep(800)
+ReleaseKey("spacebar")
+Sleep(200)
+PressKey("spacebar")
+Sleep(800)
+ReleaseKey("spacebar")
+Sleep(200)
+PressKey("q")
+Sleep(1500)
+ReleaseKey("q")
+Sleep(1000)
+PressKey("spacebar")
+Sleep(800)
+ReleaseKey("spacebar")
+Sleep(200)
+PressAndReleaseKey("c")
+ReleaseKey("w")
+Sleep(2000)
+loadout(6)
+Sleep(500)
+PressAndReleaseMouseButton(3)
+PressKey("a")
+PressKey("S")
+Sleep(500)
+ReleaseKey("S")
+Sleep(1500)
+ReleaseKey("a")
+for i=1,20,1 do
+MoveMouseRelative(20,1)
+Sleep(10)
+end
+--MoveMouseRelative(0,0)
+run(2000)
+Sleep(500)
+PressAndReleaseMouseButton(3)
+PressAndReleaseMouseButton(3)
+Sleep(1500)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(2000)
+PressAndReleaseKey("lctrl")
+Sleep(1000)
+PressAndReleaseKey("lctrl")
+Sleep(3000)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
+
+function loadout(i)
+if i==5
+then
+index=-13
+elseif i==6
+then
+index=-12
+end
+PressAndReleaseKey("f1")
+Sleep(1000)
+PressAndReleaseKey("left")
+Sleep(200)
+for i=1,20,1 do
+	MoveMouseRelative(index,1)
+	Sleep(10)
+end
+Sleep(500)
+PressAndReleaseMouseButton(1)
+Sleep(200)
+PressAndReleaseKey("escape")
+Sleep(500)
+PressAndReleaseKey("escape")
+Sleep(500)
+end
+
+function entermap_rathil(index)
+PressAndReleaseKey("m")
+Sleep(500)
+for i=1,20,1 do
+MoveMouseRelative(12,0)
+Sleep(10)
+end
+for i=1,20,1 do
+PressAndReleaseMouseButton(1)
+Sleep(50)
+end
+MoveMouseRelative(0,60)
+Sleep(200)
+PressAndReleaseMouseButton(1)
+Sleep(100)
+PressAndReleaseMouseButton(1)
+Sleep(100)
+for i=1,10,1 do
+MoveMouseRelative(-25,-9)
+Sleep(10)
+end
+Sleep(1000)
+PressAndReleaseMouseButton(1)
+Sleep(100)
+PressAndReleaseMouseButton(1)
+Sleep(100)
+for i=1,10,1 do
+MoveMouseRelative(20,9)
+Sleep(10)
+end
+MoveMouseRelative(3,10)
+Sleep(500)
+if index==1
+then
+PressKey("f")
+Sleep(2500)
+ReleaseKey("f")
+end
+Sleep(500)
+MoveMouseRelative(50,15)
+Sleep(200)
+PressAndReleaseMouseButton(1)
+Sleep(100)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+end
+
+function rathil_yeeter3(i)
+while (IsKeyLockOn("capslock"))and i>0 do
+i=i-1
+PressAndReleaseKey("3")
+run(2200)
+Sleep(200)
+PressAndReleaseMouseButton(3)
+Sleep(1500)
+PressKey("s")
+Sleep(2200)
+ReleaseKey("s")
+PressAndReleaseKey("2")
+Sleep(400)
+MoveMouseRelative(-50,70)
+Sleep(4000)
+PressAndReleaseMouseButton(1)
+--Sleep(50)
+PressKey("z")
+run(1500)
+ReleaseKey("z")
+Sleep(2000)
+for i=1,8,1 do
+MoveMouseRelative(-60,0)
+Sleep(1)
+end
+run(3000)
+Sleep(500)
+PressAndReleaseKey("down")
+PressAndReleaseKey("down")
+Sleep(20000)
+PressAndReleaseKey("C")
+Sleep(30000)
+end
+end
+
+function run(t)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(t)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
